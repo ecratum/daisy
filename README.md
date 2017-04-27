@@ -1,6 +1,7 @@
 What we are proposing to build is an easy-to use, modularized web interface for *D* that follows the path of RACK on Ruby.
 
 https://rack.github.io/
+
 https://github.com/rack
 
 This would be very appealing to web developers because with this approach, they could easily switch from *Ruby or Python*, then build frameworks on top of **Daisy**. 
