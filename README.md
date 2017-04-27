@@ -1,3 +1,21 @@
-# daisy
-D for the Web 
-and is amazing
+What we are proposing to build is an easy-to use, modularized web interface for D that follows the path of RACK on Ruby.
+
+https://rack.github.io/
+https://github.com/rack
+
+This would be very appealing to web developers because with this approach, they could easily switch from Ruby or Python, then build frameworks on top of Daisy. This happened in Ruby, when RACK was extracted from the RubyOnRails framework.
+Also the modularization would give developers easy access to what they exactly need.
+Building it could be done based on the patterns in RACK. RACK is very well documented.
+
+The core features of this interface could be the following:
+- content_type: Setting a content-type header on responses that do not have one.
+- logger: We should be able to log all the events in the daily, we should be able to granulate the results also, we should use and improve the dlang logger class   .
+- media_type: Setting media type (type/subtype) portion of the content_type header without any media type parameters.
+- query_parser
+- reloader
+- request: Provides a convenient interface to the Daisy environment.
+- response: Provides a simple interface for response.
+- sendfile
+- server
+
+The code in each of these would not very big. It could be easily broken down into small subprojects and be organized into a multi-milestone roadmap.
